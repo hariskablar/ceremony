@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brown: #432818;
+}
+
+* {
+  font-family: 'Great Vibes', cursive;
+  font-style: normal;
+}
