@@ -1,7 +1,16 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-brown: #432818;
+  --color-earth-0: #ede0d4;
+  --color-earth-1: #e6ccb2;
+  --color-earth-2: #ddb892;
+  --color-earth-3: #b08968;
+  --color-earth-4: #7f5539;
+  --color-earth-5: #9c6644;
+  --color-earth-6: #b07d62;
+  --color-earth-7: #9d6b53;
+  --color-earth-8: #8a5a44;
+  --color-earth-9: #774936;
 }
 body,
 html {
@@ -11,4 +20,12 @@ html {
 * {
   font-family: 'Great Vibes', cursive;
   font-style: normal;
+}
+.blob-mask {
+  mask-image: url('/public/blob.svg');
+  -webkit-mask-image: url('/public/blob.svg');
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
 }
