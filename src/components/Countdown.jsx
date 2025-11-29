@@ -49,28 +49,28 @@ export default function Countdown({ target }) {
   return (
     <div className='w-full flex justify-center gap-5 mb-10'>
       <div className='flex flex-col items-center justify-center leading-none'>
-        <span className='text-3xl font-extrabold text-brown'>
+        <span className='text-4xl font-extrabold text-brown leading-none'>
           {days.toString()}
         </span>
-        <span className='text-brown'>dana</span>
+        <span className='text-brown text-xl leading-none'>dana</span>
       </div>
-      <div className='flex flex-col items-center justify-center leading-none'>
-        <span className='text-3xl font-extrabold text-brown'>
+      <div className='flex flex-col items-center justify-center '>
+        <span className='text-4xl font-extrabold text-brown leading-none'>
           {hours.toString().padStart(2, '0')}
         </span>
-        <span className='text-brown'>sati</span>
+        <span className='text-brown text-xl leading-none'>sati</span>
       </div>
       <div className='flex flex-col items-center justify-center leading-none'>
-        <span className='text-3xl font-extrabold text-brown'>
+        <span className='text-4xl font-extrabold text-brown leading-none'>
           {minutes.toString().padStart(2, '0')}
         </span>
-        <span className='text-brown'>minuta</span>
+        <span className='text-brown text-xl leading-none'>minuta</span>
       </div>
       <div className='flex flex-col items-center justify-center leading-none'>
-        <span className='text-3xl font-extrabold text-brown'>
+        <span className='text-4xl font-extrabold text-brown leading-none'>
           {seconds.toString().padStart(2, '0')}
         </span>
-        <span className='text-brown'>sekundi</span>
+        <span className='text-brown text-xl leading-none'>sekundi</span>
       </div>
     </div>
   );
