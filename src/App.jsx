@@ -3,7 +3,7 @@ import Countdown from './components/Countdown';
 function App() {
   return (
     <>
-      <div className='h-screen w-screen'>
+      <div className='h-dvh w-screen'>
         <img src='/bg1.png' className='object-cover h-full ' />
         <img
           src='/amra.png'
@@ -17,7 +17,7 @@ function App() {
           src='/haris.png'
           className='absolute top-25 left-7 drop-shadow-xs drop-shadow-gray-900'
         />
-        <img src='/cut2.webp' className='absolute -bottom-0 left-0 w-full' />
+        <img src='/cut2.webp' className='absolute bottom-0 left-0 w-full' />
       </div>
       <div className='w-full mt-10 mb-5'>
         <p className='text-center text-4xl text-brown'>
