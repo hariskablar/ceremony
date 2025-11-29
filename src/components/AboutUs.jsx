@@ -23,7 +23,7 @@ const AboutUs = () => {
       '
       >
         <div
-          className='blob-mask w-[1000px] h-[200px] transition-all duration-700 bg-center bg-cover'
+          className='blob-mask w-[1500px] h-[200px] transition-all duration-700 bg-center bg-cover'
           style={{ backgroundImage: `url(${images[index]})` }}
         ></div>
         <p className='text-earth-4 px-5 py-5 text-2xl  leading-4'>
