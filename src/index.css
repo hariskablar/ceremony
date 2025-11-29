@@ -3,6 +3,10 @@
 @theme {
   --color-brown: #432818;
 }
+body,
+html {
+  overflow-x: hidden;
+}
 
 * {
   font-family: 'Great Vibes', cursive;
