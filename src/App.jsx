@@ -3,7 +3,7 @@ import Countdown from './components/Countdown';
 function App() {
   return (
     <>
-      <div className='h-dvh w-screen'>
+      <div className='h-svh w-screen'>
         <img src='/bg1.png' className='object-cover h-full ' />
         <img
           src='/amra.png'
