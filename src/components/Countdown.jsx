@@ -47,7 +47,7 @@ export default function Countdown({ target }) {
   const { days, hours, minutes, seconds } = timeLeft;
 
   return (
-    <div className='w-full flex justify-center gap-5 mb-10'>
+    <div className='w-full flex justify-center gap-5 mb-10 caligraphy'>
       <div className='flex flex-col items-center justify-center leading-none'>
         <span className='text-4xl font-extrabold text-earth-4 leading-none'>
           {days.toString()}

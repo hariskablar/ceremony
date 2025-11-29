@@ -21,7 +21,7 @@ function App() {
         <img src='/cut2.webp' className='absolute bottom-0 left-0 w-full ' />
       </div>
       <div className='w-full mt-10 mb-5'>
-        <p className='text-center text-4xl text-earth-4'>
+        <p className='text-center text-4xl text-earth-4 caligraphy'>
           Trenuci do našeg dana
         </p>
       </div>

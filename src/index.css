@@ -17,10 +17,16 @@ html {
   overflow-x: hidden;
 }
 
-* {
+.caligraphy {
   font-family: 'Great Vibes', cursive;
   font-style: normal;
 }
+* {
+  font-family: 'Carattere', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .blob-mask {
   mask-image: url('/public/blob.svg');
   -webkit-mask-image: url('/public/blob.svg');
