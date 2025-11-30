@@ -26,20 +26,20 @@ const AboutUs = () => {
           className='blob-mask w-[1500px] h-[200px] transition-all duration-700 bg-center bg-cover'
           style={{ backgroundImage: `url(${images[index]})` }}
         ></div>
-        <p className='text-earth-4 px-5 py-5 text-2xl  leading-4'>
+        <p className='text-earth-4 px-5 py-5 text-md  leading-4'>
           Naši putevi su se spojili 2019. godine, a tri zajedničke godine na
           Ilidži pretvorile su dvoje kolega u najbolje prijatelje. Ljubav iz
           prijateljstva je posebna, a kod nas se bas desila u od tada je
           nastavila da raste.
         </p>
       </div>
-      <p className='text-earth-4 text-2xl  leading-4 px-5 mb-5'>
+      <p className='text-earth-4 text-md  leading-4 px-5 mb-5'>
         Rado putujemo,idemo na utakmice, provodimo duge dane na Chiemseeu,
         družimo se, igramo Remija.. Haris pronalazi radost u igricama, Amra u
         knjigama i druženju – i baš u toj različitosti nalazimo savršenu
         ravnotežu.
       </p>
-      <p className='text-earth-4 text-2xl leading-4 px-5'>
+      <p className='text-earth-4 text-md leading-4 px-5'>
         Sada smo na korak do cilja, hvala Vam što ćete biti dio našeg vjenčanja
         i svojim prisustvom učiniti našu priču još ljepšom.
       </p>
