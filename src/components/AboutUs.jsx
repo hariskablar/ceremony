@@ -18,21 +18,19 @@ const AboutUs = () => {
   }, []);
   return (
     <div className='w-full bg-earth-1 pt-5 pb-10'>
-      <div
-        className='flex
-      '
-      >
-        {/* <div
-          className='blob-mask w-[1500px] h-[200px] transition-all duration-700 bg-center bg-cover'
-          style={{ backgroundImage: `url(${images[index]})` }}
-        ></div> */}
-        <div className='relative mt-3'>
-          <img src='/stamp.webp' alt='stamp' className='ml-3 relative' />
+      <div className='flex'>
+        <div className='relative mt-3 ml-3 mb-2'>
           <img
-            src={images[index]}
-            alt='images'
-            className='absolute p-2 top-0 left-3'
+            src='/stamp.webp'
+            alt='stamp'
+            className='w-full h-full relative'
           />
+          <div className='absolute inset-0 p-[10px] '>
+            <div
+              className='transition-all duration-700 bg-cover bg-center w-full h-full'
+              style={{ backgroundImage: `url(${images[index]})` }}
+            ></div>
+          </div>
         </div>
         <p className='text-earth-4 px-5 py-5 text-md  leading-4'>
           Naši putevi su se spojili 2019. godine, a tri zajedničke godine na
