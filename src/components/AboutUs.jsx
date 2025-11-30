@@ -22,10 +22,18 @@ const AboutUs = () => {
         className='flex
       '
       >
-        <div
+        {/* <div
           className='blob-mask w-[1500px] h-[200px] transition-all duration-700 bg-center bg-cover'
           style={{ backgroundImage: `url(${images[index]})` }}
-        ></div>
+        ></div> */}
+        <div className='relative mt-3'>
+          <img src='/stamp.webp' alt='stamp' className='ml-3 relative' />
+          <img
+            src={images[index]}
+            alt='images'
+            className='absolute p-2 top-0 left-3'
+          />
+        </div>
         <p className='text-earth-4 px-5 py-5 text-md  leading-4'>
           Naši putevi su se spojili 2019. godine, a tri zajedničke godine na
           Ilidži pretvorile su dvoje kolega u najbolje prijatelje. Ljubav iz
