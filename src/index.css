@@ -35,3 +35,7 @@ html {
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
 }
+.active-image {
+  opacity: 1;
+  transition: opacity 0.7s ease forwards;
+}

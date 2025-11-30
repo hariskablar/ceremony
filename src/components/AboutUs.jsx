@@ -25,11 +25,16 @@ const AboutUs = () => {
             alt='stamp'
             className='w-full h-full relative'
           />
-          <div className='absolute inset-0 p-[10px] '>
-            <div
-              className='transition-all duration-700 bg-cover bg-center w-full h-full'
-              style={{ backgroundImage: `url(${images[index]})` }}
-            ></div>
+          <div className='absolute inset-2'>
+            {images.map((img, i) => (
+              <div
+                key={img}
+                className={`transition-opacity duration-700 bg-cover bg-center w-full h-full absolute inset-0  ${
+                  i === index ? 'active-image' : 'opacity-0'
+                }`}
+                style={{ backgroundImage: `url(${images[index]})` }}
+              ></div>
+            ))}
           </div>
         </div>
         <p className='text-earth-4 px-5 py-5 text-md  leading-4'>
