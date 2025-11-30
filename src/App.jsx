@@ -32,12 +32,12 @@ function App() {
         <p className='text-center text-2xl text-earth-4 caligraphy mb-2'>
           U kalendaru srcem zaokruženo
         </p>
-        <div className='flex gap-5 w-full justify-center items-center text-earth-4 mb-5'>
-          <span className='py-1 border-t border-b border-earth-4 font-medium'>
+        <div className='flex gap-4 w-full justify-center items-center text-earth-4 mb-5'>
+          <span className='py-1 border-t border-b border-earth-4 font-medium px-5'>
             SUBOTA
           </span>
           <span className='text-5xl font-medium'>31</span>
-          <span className='py-1 border-t border-b border-earth-4 font-medium'>
+          <span className='py-1 border-t border-b border-earth-4 font-medium px-5'>
             AUGUST
           </span>
         </div>
