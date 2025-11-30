@@ -49,25 +49,25 @@ export default function Countdown({ target }) {
   return (
     <div className='w-full flex justify-center gap-5 mb-10 caligraphy'>
       <div className='flex flex-col items-center justify-center leading-none'>
-        <span className='text-4xl font-extrabold text-earth-4 leading-none'>
+        <span className='text-4xl font-medium text-earth-4 leading-none'>
           {days.toString()}
         </span>
         <span className='text-earth-4 text-xl leading-none'>dana</span>
       </div>
       <div className='flex flex-col items-center justify-center '>
-        <span className='text-4xl font-extrabold text-earth-4 leading-none'>
+        <span className='text-4xl font-medium text-earth-4 leading-none'>
           {hours.toString().padStart(2, '0')}
         </span>
         <span className='text-earth-4 text-xl leading-none'>sati</span>
       </div>
       <div className='flex flex-col items-center justify-center leading-none'>
-        <span className='text-4xl font-extrabold text-earth-4 leading-none'>
+        <span className='text-4xl font-medium text-earth-4 leading-none'>
           {minutes.toString().padStart(2, '0')}
         </span>
         <span className='text-earth-4 text-xl leading-none'>minuta</span>
       </div>
       <div className='flex flex-col items-center justify-center leading-none'>
-        <span className='text-4xl font-extrabold text-earth-4 leading-none'>
+        <span className='text-4xl font-medium text-earth-4 leading-none'>
           {seconds.toString().padStart(2, '0')}
         </span>
         <span className='text-earth-4 text-xl leading-none'>sekundi</span>
