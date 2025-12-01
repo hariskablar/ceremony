@@ -27,13 +27,13 @@ const AboutUs = () => {
           />
           <div className='absolute inset-2'>
             {images.map((img, i) => (
-              <div
+              <img
                 key={img}
-                className={`transition-opacity duration-700 bg-cover bg-center w-full h-full absolute inset-0  ${
-                  i === index ? 'active-image' : 'opacity-0'
+                className={`transition-opacity duration-1700 ease-in-out bg-cover bg-center w-full h-full absolute inset-0  ${
+                  i === index ? 'opacity-100' : 'opacity-0'
                 }`}
-                style={{ backgroundImage: `url(${images[index]})` }}
-              ></div>
+                src={img}
+              />
             ))}
           </div>
         </div>
