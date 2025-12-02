@@ -35,7 +35,7 @@ function App() {
           </p>
         </div>
         <div>
-          <Countdown target='2026-08-31T17:00:00' />
+          <Countdown target='2026-08-29T17:00:00' />
         </div>
         <div>
           <p className='text-center text-2xl text-earth-4 caligraphy mb-5'>
@@ -45,7 +45,7 @@ function App() {
             <span className='py-1 border-t border-b border-earth-4 font-medium px-5'>
               SUBOTA
             </span>
-            <span className='text-5xl font-medium'>31</span>
+            <span className='text-5xl font-medium'>29</span>
             <span className='py-1 border-t border-b border-earth-4 font-medium px-5'>
               AUGUST
             </span>
