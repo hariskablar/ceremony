@@ -18,10 +18,10 @@ const Step = ({ title, time, image, reverse }) => {
           reverse ? 'text-right' : 'text-left'
         }`}
       >
-        <p className='mb-1 text-earth-4 font-medium text-3xl leading-none caligraphy'>
+        <p className='mb-1 text-earth-4 font-medium text-2xl leading-none caligraphy'>
           {title}
         </p>
-        <p className='text-earth-3 font-medium text-md leading-none caligraphy'>
+        <p className='text-earth-3 font-medium text-xl leading-none caligraphy'>
           {time}
         </p>
       </div>
