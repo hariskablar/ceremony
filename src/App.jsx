@@ -1,5 +1,6 @@
 import Countdown from './components/Countdown';
 import AboutUs from './components/AboutUs';
+import Steps from './components/Steps';
 import { motion } from 'framer-motion';
 
 function App() {
@@ -37,10 +38,10 @@ function App() {
           <Countdown target='2026-08-31T17:00:00' />
         </div>
         <div>
-          <p className='text-center text-2xl text-earth-4 caligraphy mb-2'>
+          <p className='text-center text-2xl text-earth-4 caligraphy mb-5'>
             U kalendaru srcem zaokruženo
           </p>
-          <div className='flex gap-4 w-full justify-center items-center text-earth-4 mb-5'>
+          <div className='flex gap-4 w-full justify-center items-center text-earth-4 mb-10'>
             <span className='py-1 border-t border-b border-earth-4 font-medium px-5'>
               SUBOTA
             </span>
@@ -50,9 +51,8 @@ function App() {
             </span>
           </div>
         </div>
-        <div>
-          <AboutUs />
-        </div>
+        <AboutUs />
+        <Steps />
       </motion.div>
     </div>
   );
