@@ -5,7 +5,7 @@ const Steps = () => {
     <>
       <div className='flex flex-col w-full h-auto items-stretch my-10 heart-element relative'>
         <Step
-          title='Mjesto gdje sve počinje\nRestoran Stare Vrbe'
+          title={'Početak naše bajke\nRestoran Stare Vrbe'}
           time='17:00'
           image='./wedding-arch.webp'
           reverse={false}
@@ -17,13 +17,13 @@ const Steps = () => {
           reverse={true}
         />
         <Step
-          title='Trenutak samo za nas\nPrvi ples'
+          title={'Trenutak samo za nas\nPrvi ples'}
           time='19:30'
           image='./dance.webp'
           reverse={false}
         />
         <Step
-          title='Slatki početak\nzajedničkog života'
+          title={'Slatki početak\nzajedničkog života'}
           time='20:00'
           image='./cake.webp'
           reverse={true}
