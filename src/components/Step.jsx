@@ -1,12 +1,12 @@
 const Step = ({ title, time, image, reverse }) => {
   return (
     <div
-      className={`flex w-full relative items-center justify-center gap-5 h-[150px] ${
+      className={`flex w-full relative items-center justify-center gap-10 h-[150px] ${
         reverse ? 'flex-row-reverse' : 'flex-row'
       }`}
     >
       <div
-        className={`grow basis-1/2 flex ${
+        className={`grow basis-1/3 flex ${
           reverse ? 'justify-start' : 'justify-end'
         }`}
       >
@@ -14,7 +14,7 @@ const Step = ({ title, time, image, reverse }) => {
       </div>
       <div className='w-[2px] bg-earth-4 h-full'></div>
       <div
-        className={`flex flex-col grow basis-1/2 ${
+        className={`flex flex-col grow basis-2/3 ${
           reverse ? 'text-right' : 'text-left'
         }`}
       >
