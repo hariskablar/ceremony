@@ -21,14 +21,49 @@ const RSVP = () => {
         setFamily(data.family);
         setGuests(data.guests);
         console.log(data.guests);
+
+        const initialSelected = {};
+        (data.guests || []).forEach((g) => {
+          initialSelected[g.id] = !!g.accepted;
+        });
+        setSelected(initialSelected);
       });
-  }, []);
+  }, [familySlug]);
+
+  const toggleId = (id) => {
+    setSelected((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  const handleSubmit = async () => {
+    const updates = guests.map((g) => ({
+      id: g.id,
+      accepted: !!selected[g.id],
+    }));
+    await fetch('/api/rsvp', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ updates }),
+    });
+    alert('Hvala na potvrdi <3');
+  };
   return (
     <>
       <h2>DOBRODOŠLI</h2>
-      {guests?.map((guest) => (
-        <p key={guest.id}></p>
-      ))}
+      <ul>
+        {guests?.map((guest) => (
+          <li key={guest.id}>
+            <label>
+              <input
+                type='checkbox'
+                checked={!!selected[guest.id]}
+                onChange={() => toggleId(guest.id)}
+              />
+              {guest.full_name}
+            </label>
+          </li>
+        ))}
+      </ul>
+      <button onClick={handleSubmit}>Potvrdi</button>
     </>
   );
 };

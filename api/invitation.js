@@ -1,20 +1,11 @@
 /* eslint-env node */
 
 import { neon } from '@neondatabase/serverless';
+import 'dotenv/config';
 
 export default async function handler(req, res) {
   try {
-    const dbUrl = process.env.DATABASE_URL;
-    console.log('DATABASE_URL in /api/invitation:', dbUrl); // 👈 debug
-
-    if (!dbUrl) {
-      // Don't crash Vercel dev, just return an error JSON
-      return res
-        .status(500)
-        .json({ error: 'DATABASE_URL is not set. Check .env.local.' });
-    }
-
-    const sql = neon(dbUrl);
+    const sql = neon(`${process.env.DATABASE_URL}`);
 
     const { family } = req.query;
     if (!family) {
