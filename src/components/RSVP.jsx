@@ -10,25 +10,25 @@ const RSVP = () => {
   const query = useQuery();
   const familySlug = query.get('family') || '';
   const [family, setFamily] = useState(null);
-  const [guests, setGuests] = useState(null);
+  const [guests, setGuests] = useState([]);
   const [selected, setSelected] = useState({});
 
-  useEffect(() => {
-    if (!familySlug) return;
-    fetch(`/api/invitation?family=${familySlug}`)
-      .then((r) => r.json())
-      .then((data) => {
-        setFamily(data.family);
-        setGuests(data.guests);
-        console.log(data.guests);
+  // useEffect(() => {
+  //   if (!familySlug) return;
+  //   fetch(`/api/invitation?family=${familySlug}`)
+  //     .then((r) => r.json())
+  //     .then((data) => {
+  //       setFamily(data.family);
+  //       setGuests(data.guests);
+  //       console.log(data.guests);
 
-        const initialSelected = {};
-        (data.guests || []).forEach((g) => {
-          initialSelected[g.id] = !!g.accepted;
-        });
-        setSelected(initialSelected);
-      });
-  }, [familySlug]);
+  //       const initialSelected = {};
+  //       (data.guests || []).forEach((g) => {
+  //         initialSelected[g.id] = !!g.accepted;
+  //       });
+  //       setSelected(initialSelected);
+  //     });
+  // }, [familySlug]);
 
   const toggleId = (id) => {
     setSelected((prev) => ({ ...prev, [id]: !prev[id] }));
