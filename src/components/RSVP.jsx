@@ -1,17 +1,17 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-function useQuery() {
-  const location = useLocation();
-  return new URLSearchParams(location.search);
-}
+// function useQuery() {
+//   const location = useLocation();
+//   return new URLSearchParams(location.search);
+// }
 
 const RSVP = () => {
-  const query = useQuery();
-  const familySlug = query.get('family') || '';
-  const [family, setFamily] = useState(null);
-  const [guests, setGuests] = useState([]);
-  const [selected, setSelected] = useState({});
+  // const query = useQuery();
+  // const familySlug = query.get('family') || '';
+  // const [family, setFamily] = useState(null);
+  // const [guests, setGuests] = useState([]);
+  // const [selected, setSelected] = useState({});
 
   // useEffect(() => {
   //   if (!familySlug) return;
@@ -30,26 +30,26 @@ const RSVP = () => {
   //     });
   // }, [familySlug]);
 
-  const toggleId = (id) => {
-    setSelected((prev) => ({ ...prev, [id]: !prev[id] }));
-  };
+  // const toggleId = (id) => {
+  //   setSelected((prev) => ({ ...prev, [id]: !prev[id] }));
+  // };
 
-  const handleSubmit = async () => {
-    const updates = guests.map((g) => ({
-      id: g.id,
-      accepted: !!selected[g.id],
-    }));
-    await fetch('/api/rsvp', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ updates }),
-    });
-    alert('Hvala na potvrdi <3');
-  };
+  // const handleSubmit = async () => {
+  //   const updates = guests.map((g) => ({
+  //     id: g.id,
+  //     accepted: !!selected[g.id],
+  //   }));
+  //   await fetch('/api/rsvp', {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/json' },
+  //     body: JSON.stringify({ updates }),
+  //   });
+  //   alert('Hvala na potvrdi <3');
+  // };
   return (
     <>
       <h2>DOBRODOŠLI</h2>
-      <ul>
+      {/* <ul>
         {guests?.map((guest) => (
           <li key={guest.id}>
             <label>
@@ -63,7 +63,7 @@ const RSVP = () => {
           </li>
         ))}
       </ul>
-      <button onClick={handleSubmit}>Potvrdi</button>
+      <button onClick={handleSubmit}>Potvrdi</button> */}
     </>
   );
 };
