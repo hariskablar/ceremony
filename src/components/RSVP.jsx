@@ -48,23 +48,23 @@ const RSVP = () => {
   };
   return (
     <div className='bg-earth-0 h-screen flex flex-col justify-center'>
-      <h2 className='caligraphy text-2xl text-center mb-2 text-earth-4'>
+      <h2 className='caligraphy text-4xl text-center mb-2 text-earth-4'>
         Dobro došli, draga porodico {family?.family_name}
       </h2>
-      <p className='caligraphy text-md text-center text-earth-4'>
+      <p className='caligraphy text-xl text-center text-earth-4'>
         Hvala vam što ste otvorili našu pozivnicu.
       </p>
-      <p className='caligraphy text-md text-center text-earth-4 leading-3'>
+      <p className='caligraphy text-xl text-center text-earth-4 leading-3'>
         Vaše prisustvo za nas znači mnogo i iskreno bismo se radovali da ovaj
         poseban dan podijelimo zajedno.
       </p>
-      <p className='caligraphy text-md text-center text-earth-4'>
+      <p className='caligraphy text-xl text-center text-earth-4'>
         Molimo vas ispod potvrdite svoj dolazak.
       </p>
       <ul className='mt-5'>
         {guests?.map((guest) => (
           <li key={guest.id} className='ml-[35%] mt-3'>
-            <label className='caligraphy text-earth-4 text-lg '>
+            <label className='caligraphy text-earth-4 text-2xl '>
               <input
                 type='checkbox'
                 checked={!!selected[guest.id]}
@@ -78,7 +78,7 @@ const RSVP = () => {
       </ul>
       <button
         onClick={handleSubmit}
-        className='caligraphy text-earth-4 flex mx-auto mt-10 border-1 px-10 py-1 rounded-md '
+        className='caligraphy text-earth-4 flex mx-auto mt-10 border-1 px-10 py-1 rounded-md text-2xl'
       >
         Potvrdi dolazak
       </button>
