@@ -53,6 +53,21 @@ function App() {
         </div>
         <AboutUs />
         <Steps />
+        <div className='bg-earth-0 w-full h-[50px]'></div>
+        <div className='bg-earth-1 w-full h-[50px]'></div>
+        <div className='bg-earth-2 w-full h-[50px]'></div>
+        <div className='bg-earth-3 w-full h-[50px]'></div>
+        <div className='bg-earth-4 w-full h-[50px]'></div>
+        <div className='bg-earth-6 w-full h-[50px]'></div>
+        <div className='bg-earth-7 w-full h-[50px]'></div>
+        <div className='bg-1 w-full h-[50px]'></div>
+        <div className='bg-2 w-full h-[50px]'></div>
+        <div className='bg-3 w-full h-[50px]'></div>
+        <div className='bg-4 w-full h-[50px]'></div>
+        <div className='bg-5 w-full h-[50px]'></div>
+        <div className='bg-6 w-full h-[50px]'></div>
+        <div className='bg-7 w-full h-[50px]'></div>
+        <div className='bg-8 w-full h-[50px] mb-100'></div>
       </motion.div>
     </div>
   );
