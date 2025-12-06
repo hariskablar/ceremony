@@ -66,3 +66,30 @@ html {
   transform: translate(-50%, 0) rotate(180deg);
   font-weight: 800;
 }
+
+/*animations*/
+.animate-height {
+  height: fit-content;
+  overflow: hidden;
+  animation: anim-height 2s ease-in-out forwards;
+}
+@keyframes anim-height {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 1000px;
+  }
+}
+.loading-animation {
+  animation: loading-letter 2s ease-in-out infinite;
+}
+@keyframes loading-letter {
+  0%,
+  100% {
+    opactity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
