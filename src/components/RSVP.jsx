@@ -63,12 +63,12 @@ const RSVP = () => {
       ) : (
         <div className='animate-height'>
           <h2 className='caligraphy text-4xl text-center mb-2 text-beige-7'>
-            Dobro došli, draga porodico {family?.family_name}
+            Dobrodošli, draga porodico {family?.family_name}
           </h2>
           <p className=' text-xl text-center text-beige-6 px-2'>
             Hvala vam što ste otvorili našu pozivnicu.
           </p>
-          <p className=' text-xl text-center text-beige-6 leading-4 px-2 my-2'>
+          <p className=' text-xl text-center text-beige-6 leading-5 px-2 my-2'>
             Vaše prisustvo za nas znači mnogo i iskreno bismo se radovali da
             ovaj poseban dan podijelimo zajedno.
           </p>
