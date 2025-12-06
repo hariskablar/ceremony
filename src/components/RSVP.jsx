@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import PopUp from './PopUp';
 
 function useQuery() {
   const location = useLocation();
@@ -14,6 +15,7 @@ const RSVP = () => {
   const [guests, setGuests] = useState([]);
   const [selected, setSelected] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     if (!familySlug) return;
@@ -46,11 +48,17 @@ const RSVP = () => {
       id: g.id,
       accepted: !!selected[g.id],
     }));
-    await fetch('/api/rsvp', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ updates }),
-    });
+    try {
+      await fetch('/api/rsvp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ updates }),
+      });
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setShowPopup(true);
+    }
   };
 
   return (
@@ -100,6 +108,7 @@ const RSVP = () => {
       )}
 
       <img src='./without_birds.webp' className='mt-10 w-[90%] mx-auto' />
+      {showPopup && <PopUp showModal={showPopup} setShowPopup={setShowPopup} />}
     </div>
   );
 };
