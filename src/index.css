@@ -11,6 +11,15 @@
   --color-earth-7: #9d6b53;
   --color-earth-8: #8a5a44;
   --color-earth-9: #774936;
+  --color-1: #f5efe7;
+  --color-2: #e8dacb;
+  --color-3: #dccbb8;
+  --color-4: #c7b39a;
+  --color-5: #d3b178;
+  --color-6: #988776;
+  --color-7: #4d3f35;
+  --color-8: #2f2a26;
+  --color-9: ;
 }
 body,
 html {
@@ -22,9 +31,10 @@ html {
   font-style: normal;
 }
 * {
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   /* font-weight: 200; */
   font-style: normal;
+  letter-spacing: -1px;
 }
 
 .blob-mask {
