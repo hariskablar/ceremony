@@ -49,28 +49,28 @@ const RSVP = () => {
   return (
     <div className='bg-1 h-screen flex flex-col justify-center'>
       <img src='./lines_with_birds.webp' className='mb-10 w-[90%] mx-auto' />
-      <h2 className='caligraphy text-4xl text-center mb-2 text-7'>
+      <h2 className='caligraphy text-4xl text-center mb-2 text-beige-7'>
         Dobro došli, draga porodico {family?.family_name}
       </h2>
-      <p className=' text-xl text-center text-6'>
+      <p className=' text-xl text-center text-beige-6 px-2'>
         Hvala vam što ste otvorili našu pozivnicu.
       </p>
-      <p className=' text-xl text-center text-6 leading-3'>
+      <p className=' text-xl text-center text-beige-6 leading-4 px-2 my-2'>
         Vaše prisustvo za nas znači mnogo i iskreno bismo se radovali da ovaj
         poseban dan podijelimo zajedno.
       </p>
-      <p className=' text-xl text-center text-6'>
+      <p className=' text-xl text-center text-beige-6 px-2'>
         Molimo vas ispod potvrdite svoj dolazak.
       </p>
       <ul className='mt-5'>
         {guests?.map((guest) => (
           <li key={guest.id} className='ml-[35%] mt-3'>
-            <label className='caligraphy text-6 text-2xl '>
+            <label className='caligraphy text-beige-6 text-2xl '>
               <input
                 type='checkbox'
                 checked={!!selected[guest.id]}
                 onChange={() => toggleId(guest.id)}
-                className='mr-3 accent-5'
+                className='mr-3 accent-beige-5'
               />
               {guest.full_name}
             </label>
@@ -79,7 +79,7 @@ const RSVP = () => {
       </ul>
       <button
         onClick={handleSubmit}
-        className=' text-5 flex mx-auto mt-10 border-1 px-10 py-1 rounded-md text-2xl'
+        className=' text-beige-7 flex mx-auto mt-10 border border-beige-6 px-10 py-1 rounded-md text-2xl'
       >
         Potvrdi dolazak
       </button>

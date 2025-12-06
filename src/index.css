@@ -11,14 +11,14 @@
   --color-earth-7: #9d6b53;
   --color-earth-8: #8a5a44;
   --color-earth-9: #774936;
-  --color-1: #f5efe7;
-  --color-2: #e8dacb;
-  --color-3: #dccbb8;
-  --color-4: #c7b39a;
-  --color-5: #d3b178;
-  --color-6: #988776;
-  --color-7: #4d3f35;
-  --color-8: #2f2a26;
+  --color-beige-1: #f5efe7;
+  --color-beige-2: #e8dacb;
+  --color-beige-3: #dccbb8;
+  --color-beige-4: #c7b39a;
+  --color-beige-5: #d3b178;
+  --color-beige-6: #988776;
+  --color-beige-7: #4d3f35;
+  --color-beige-8: #2f2a26;
 }
 body,
 html {
