@@ -54,7 +54,7 @@ html {
   position: absolute;
   top: -17px;
   left: 100px;
-  transform: translate(-6px, 0);
+  transform: translate(-8px, 0);
   font-weight: 800;
 }
 .heart-element:after {
@@ -63,7 +63,7 @@ html {
   position: absolute;
   bottom: -17px;
   left: 100px;
-  transform: translate(-6px, 0) rotate(180deg);
+  transform: translate(-8px, 0) rotate(180deg);
   font-weight: 800;
 }
 
