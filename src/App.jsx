@@ -11,7 +11,7 @@ function App() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 2 }}
-        className='relative inset-0 bg-white z-50 pointer-events-none'
+        className='relative inset-0 bg-beige-1 z-50 pointer-events-none'
       >
         <div className='h-svh w-screen overflow-hidden relative'>
           <img src='/bg1.png' className='object-cover h-full ' />
