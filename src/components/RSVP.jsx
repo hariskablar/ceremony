@@ -70,7 +70,7 @@ const RSVP = () => {
       className='relative inset-0'
     >
       <div className='bg-beige-1 h-screen flex flex-col justify-center'>
-        <img src='./lines_with_birds.webp' className='mb-10 w-[90%] mx-auto' />
+        <img src='/lines_with_birds.webp' className='mb-10 w-[90%] mx-auto' />
         {isLoading ? (
           <p className='w-full text-center text-beige-5 text-7xl caligraphy loading-animation'>
             A & H
@@ -114,7 +114,7 @@ const RSVP = () => {
           </div>
         )}
 
-        <img src='./without_birds.webp' className='mt-10 w-[90%] mx-auto' />
+        <img src='/without_birds.webp' className='mt-10 w-[90%] mx-auto' />
         {showPopup && (
           <PopUp showModal={showPopup} setShowPopup={setShowPopup} />
         )}
