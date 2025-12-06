@@ -24,10 +24,15 @@ const PopUp = ({ setShowPopup }) => {
           x
         </span>
         <h2 className='caligraphy text-2xl text-beige-7 mb-3'>Hvala vam!</h2>
-        <p className='text-beige-6 mb-6'>
+        <p className='text-beige-6 mb-6 text-lg'>
           Vaša potvrda je uspješno zabilježena.
         </p>
-        <Link to='/'>Početna stranica</Link>
+        <Link
+          to='/'
+          className=' text-beige-7 flex w-fit mx-auto border border-beige-6 px-10 py-1 rounded-md text-lg'
+        >
+          Početna stranica
+        </Link>
       </div>
     </div>
   );
