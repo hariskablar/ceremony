@@ -47,27 +47,27 @@ export default function Countdown({ target }) {
   const { days, hours, minutes, seconds } = timeLeft;
 
   return (
-    <div className='w-full flex justify-center gap-5 mb-10 caligraphy'>
+    <div className='w-full flex justify-center gap-5 mb-10 '>
       <div className='flex flex-col items-center justify-center leading-none'>
-        <span className='text-4xl font-medium text-earth-4 leading-none'>
+        <span className='text-4xl font-medium text-earth-4 leading-none caligraphy'>
           {days.toString()}
         </span>
         <span className='text-earth-4 text-xl leading-none'>dana</span>
       </div>
       <div className='flex flex-col items-center justify-center '>
-        <span className='text-4xl font-medium text-earth-4 leading-none'>
+        <span className='text-4xl font-medium text-earth-4 leading-none caligraphy'>
           {hours.toString().padStart(2, '0')}
         </span>
         <span className='text-earth-4 text-xl leading-none'>sati</span>
       </div>
-      <div className='flex flex-col items-center justify-center leading-none'>
-        <span className='text-4xl font-medium text-earth-4 leading-none'>
+      <div className='flex flex-col items-center justify-center leading-none '>
+        <span className='text-4xl font-medium text-earth-4 leading-none caligraphy'>
           {minutes.toString().padStart(2, '0')}
         </span>
         <span className='text-earth-4 text-xl leading-none'>minuta</span>
       </div>
-      <div className='flex flex-col items-center justify-center leading-none'>
-        <span className='text-4xl font-medium text-earth-4 leading-none'>
+      <div className='flex flex-col items-center justify-center leading-none '>
+        <span className='text-4xl font-medium text-earth-4 leading-none caligraphy'>
           {seconds.toString().padStart(2, '0')}
         </span>
         <span className='text-earth-4 text-xl leading-none'>sekundi</span>

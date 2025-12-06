@@ -29,12 +29,12 @@ html {
 .caligraphy {
   font-family: 'Great Vibes', cursive;
   font-style: normal;
+  letter-spacing: 0px;
 }
 * {
   font-family: 'Cormorant Garamond', serif;
   /* font-weight: 200; */
   font-style: normal;
-  letter-spacing: -1px;
 }
 
 .blob-mask {
