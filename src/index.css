@@ -50,20 +50,20 @@ html {
 }
 .heart-element:before {
   content: '♡';
-  color: var(--color-earth-4);
+  color: var(--color-beige-7);
   position: absolute;
   top: -17px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  left: 100px;
+  transform: translate(-6px, 0);
   font-weight: 800;
 }
 .heart-element:after {
   content: '♡';
-  color: var(--color-earth-4);
+  color: var(--color-beige-7);
   position: absolute;
   bottom: -17px;
-  left: 50%;
-  transform: translate(-50%, 0) rotate(180deg);
+  left: 100px;
+  transform: translate(-6px, 0) rotate(180deg);
   font-weight: 800;
 }
 

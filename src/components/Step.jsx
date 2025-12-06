@@ -1,29 +1,17 @@
-const Step = ({ title, time, image, reverse }) => {
+const Step = ({ title, time, image }) => {
   return (
     <div
-      className={`flex w-full relative items-center justify-center gap-10 h-[150px] ${
-        reverse ? 'flex-row-reverse' : 'flex-row'
-      }`}
+      className={`flex w-full ml-[100px] relative items-center justify-start gap-10 h-[150px] `}
     >
-      <div
-        className={`grow basis-1/2 flex ${
-          reverse ? 'justify-start' : 'justify-end'
-        }`}
-      >
-        <img src={image} className='w-[60px] h-[60px]' />
+      <div className='h-full w-[2px] bg-beige-7'></div>
+      <div className='w-[75px] h-[75px] absolute -left-[35px] bg-white p-3 border-2 border-beige-7 rounded-full'>
+        <img src={image} className='relative' />
       </div>
-      <div className='w-[2px] bg-earth-4 h-full'></div>
-      <div
-        className={`flex flex-col grow basis-1/2 ${
-          reverse ? 'text-right' : 'text-left'
-        }`}
-      >
-        <p className='mb-1 text-earth-4 font-medium text-2xl leading-none caligraphy'>
+      <div className='flex flex-col justify-center'>
+        <p className='caligraphy text-2xl whitespace-pre-line leading-6'>
           {title}
         </p>
-        <p className='text-earth-3 font-medium text-xl leading-none caligraphy'>
-          {time}
-        </p>
+        <p className='text-xl text-beige-5 leading-4'>{time}</p>
       </div>
     </div>
   );

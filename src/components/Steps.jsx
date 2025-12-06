@@ -7,26 +7,22 @@ const Steps = () => {
         <Step
           title={'Početak naše bajke\nRestoran Stare Vrbe'}
           time='17:00'
-          image='./wedding-arch.webp'
-          reverse={false}
+          image='./wedding-arch-gold.webp'
         />
         <Step
           title='Ceremonija ljubavi'
           time='18:00'
-          image='./marriage.webp'
-          reverse={true}
+          image='./marriage-gold.webp'
         />
         <Step
           title={'Trenutak samo za nas\nPrvi ples'}
           time='19:30'
-          image='./dance.webp'
-          reverse={false}
+          image='./dance-gold.webp'
         />
         <Step
           title={'Slatki početak\nzajedničkog života'}
           time='20:00'
-          image='./cake.webp'
-          reverse={true}
+          image='./cake-gold.webp'
         />
       </div>
     </>
