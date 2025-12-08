@@ -10,13 +10,13 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Missing family param' });
     }
     const families =
-      await sql`SELECT id, family_name, family_slug FROM families WHERE family_slug = ${family} LIMIT 1`;
+      await sql`SELECT id, family_name, family_slug, invite_string, prefix, welcome FROM families WHERE family_slug = ${family} LIMIT 1`;
 
     if (families.length === 0) {
       return res.status(404).json({ error: 'Family not found' });
     }
     const guests =
-      await sql`SELECT id, full_name, accepted FROM guests WHERE family_id = ${families[0].id} ORDER BY full_name`;
+      await sql`SELECT full_name, accepted, pos FROM guests WHERE family_id = ${families[0].id} ORDER BY pos ASC`;
 
     res.status(200).json({
       family: families[0],

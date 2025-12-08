@@ -60,6 +60,19 @@ const RSVP = () => {
       setShowPopup(true);
     }
   };
+  const openInvString =
+    family?.welcome === 'f'
+      ? 'otvorila'
+      : family?.welcome === 'm'
+      ? 'otvorio'
+      : 'otvorili';
+
+  const welcome =
+    family?.welcome === 'f'
+      ? 'Dobrodošla'
+      : family?.welcome === 'm'
+      ? 'Dobrodošao'
+      : 'Dobrodošli';
 
   return (
     <motion.div
@@ -77,22 +90,33 @@ const RSVP = () => {
           </p>
         ) : (
           <div className='animate-height'>
-            <h2 className='caligraphy text-4xl text-center mb-2 text-beige-7'>
-              Dobrodošli, draga porodico {family?.family_name}
+            <h2 className='caligraphy text-4xl text-center mb-2 text-beige-7 leading-11'>
+              {welcome}, drag{family?.prefix} naš
+              {guests?.length < 2 && family?.welcome === 'm'
+                ? ` `
+                : family?.prefix}{' '}
+              {family?.invite_string}
             </h2>
             <p className=' text-xl text-center text-beige-6 px-2'>
-              Hvala vam što ste otvorili našu pozivnicu.
+              {guests.length < 2
+                ? `Hvala što si ${openInvString} našu pozivnicu.`
+                : `Hvala vam što ste otvorili našu pozivnicu.`}
             </p>
             <p className=' text-xl text-center text-beige-6 leading-5 px-2 my-2'>
-              Vaše prisustvo za nas znači mnogo i iskreno bismo se radovali da
-              ovaj poseban dan podijelimo sa vama.
+              {guests.length < 2
+                ? `Tvoje prisustvo za nas znači mnogo i iskreno bismo se radovali da
+              ovaj poseban dan podijelimo sa tobom.`
+                : `Vaše prisustvo za nas znači mnogo i iskreno bismo se radovali da
+              ovaj poseban dan podijelimo sa vama.`}
             </p>
             <p className=' text-xl text-center text-beige-6 px-2'>
-              Molimo vas ispod potvrdite svoj dolazak.
+              {guests.length < 2
+                ? `Ispod potvrdi svoj dolazak.`
+                : `Molimo vas ispod potvrdite svoj dolazak.`}
             </p>
             <ul className='mt-5'>
               {guests?.map((guest) => (
-                <li key={guest.id} className='ml-[35%] mt-3'>
+                <li key={guest.full_name} className='ml-[35%] mt-3'>
                   <label className='caligraphy text-beige-6 text-2xl '>
                     <input
                       type='checkbox'
