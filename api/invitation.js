@@ -16,7 +16,7 @@ export default async function handler(req, res) {
       return res.status(404).json({ error: 'Family not found' });
     }
     const guests =
-      await sql`SELECT full_name, accepted, pos FROM guests WHERE family_id = ${families[0].id} ORDER BY pos ASC`;
+      await sql`SELECT id, full_name, accepted, pos FROM guests WHERE family_id = ${families[0].id} ORDER BY pos ASC`;
 
     res.status(200).json({
       family: families[0],
