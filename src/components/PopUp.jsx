@@ -25,9 +25,7 @@ const PopUp = ({ setShowPopup }) => {
         </span>
         <h2 className='caligraphy text-2xl text-beige-7 mb-3'>Hvala vam!</h2>
         <p className='text-beige-6 mb-6 text-lg leading-5'>
-          Hvala vam od srca!
-          <br />
-          Radujemo se što ćete biti s nama.
+          Veselimo se što ćete svojim prisustvom uljepšati naš dan.
         </p>
         <Link
           to='/'
