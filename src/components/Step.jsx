@@ -7,8 +7,8 @@ const Step = ({ title, time, image }) => {
     >
       <div className='h-full w-[2px] bg-beige-7'></div>
       <motion.div
-        initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
         transition={{ duration: 0.7, ease: 'easeOut' }}
         viewport={{ once: true, amount: 0.9 }}
         className='w-[75px] h-[75px] absolute -left-[35px] bg-white p-3 border-2 border-beige-7 rounded-full'
