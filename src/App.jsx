@@ -17,19 +17,19 @@ function App() {
         <img src='/bg2.png' className='object-cover h-full ' />
         <img
           src='/heart-gold.webp'
-          className='absolute w-7 h-7 top-36 left-20'
+          className='absolute w-7 h-7 top-36 left-[25%]'
         />
         <img
           src='/heart-beige.webp'
-          className='absolute w-10 h-10 top-28 left-46 rotate-y-180'
+          className='absolute w-10 h-10 top-28 left-[52%] rotate-y-180'
         />
-        <p className='caligraphy absolute text-7xl top-20 left-10 text-beige-7'>
+        <p className='caligraphy absolute text-7xl top-20 left-[15%] text-beige-7'>
           Amra
         </p>
-        <p className='caligraphy absolute text-4xl top-35 left-30 text-beige-7'>
+        <p className='caligraphy absolute text-4xl top-35 left-[37%] text-beige-7'>
           &
         </p>
-        <p className='caligraphy absolute text-7xl top-40 left-30 text-beige-7'>
+        <p className='caligraphy absolute text-7xl top-40 left-[37%] text-beige-7'>
           Haris
         </p>
         <img
