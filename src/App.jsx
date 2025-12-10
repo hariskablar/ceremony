@@ -10,7 +10,7 @@ function App() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
       className='relative inset-0 bg-white z-50 pointer-events-none'
     >
       <div className='h-svh w-screen overflow-hidden relative'>

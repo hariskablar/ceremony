@@ -36,18 +36,6 @@ html {
   font-style: normal;
 }
 
-.blob-mask {
-  mask-image: url('/public/blob.svg');
-  -webkit-mask-image: url('/public/blob.svg');
-  mask-size: cover;
-  -webkit-mask-size: cover;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-}
-.active-image {
-  opacity: 1;
-  transition: opacity 0.7s ease forwards;
-}
 .heart-element:before {
   content: '♡';
   color: var(--color-beige-7);

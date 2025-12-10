@@ -39,11 +39,12 @@ const AboutUs = () => {
         i svojim prisustvom učiniti našu priču još ljepšom.
       </p>
       <div className='flex flex-wrap flex-row z-3 relative'>
-        <img src='/paper-mask-top-beige.webp' className='absolute top-0' />
+        <img src='/paper-mask-top-beige.webp' className='absolute top-0 z-3' />
         {images.map((image, index) => (
           <img src={image} key={index} className='basis-1/4 w-1/4 ' />
         ))}
-        <img src='/paper-mask-bottom.webp' className='absolute bottom-0' />
+        <div className='bg-[#9887768c] h-full w-full z-2 absolute'></div>
+        <img src='/paper-mask-bottom.webp' className='absolute bottom-0 z-3' />
       </div>
     </div>
   );
