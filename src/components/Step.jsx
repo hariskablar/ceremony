@@ -28,7 +28,7 @@ const Step = ({ title, time, image }) => {
         <motion.p
           initial={{ opacity: 0, x: '30px' }}
           whileInView={{ opacity: 1, x: '0px' }}
-          transition={{ duration: 1, ease: 'easeIn', delay: 0.5 }}
+          transition={{ duration: 1, ease: 'easeIn', delay: 0.3 }}
           viewport={{ once: true, amount: 0.9 }}
           className='text-xl text-beige-5 leading-4'
         >
