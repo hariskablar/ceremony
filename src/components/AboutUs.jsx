@@ -24,15 +24,17 @@ const AboutUs = () => {
       </h2>
       <p className='text-beige-6 px-5 py-5 text-xl  leading-5'>
         Naši putevi su se spojili 2019. godine, a tri zajedničke godine na
-        Ilidži pretvorile su dvoje kolega u najbolje prijatelje. Ljubav iz
-        prijateljstva je posebna, a kod nas se bas desila u od tada je nastavila
-        da raste.
+        Ilidži pretvorile su dvoje kolega u najbolje prijatelje. Iz tog
+        prijateljstva, polako i iskreno, rodila se ljubav – posebna, tiha, ali
+        snažna. Od tada, naš odnos je iz dana u dan postajao dublji, sigurniji i
+        ljepši, vodeći nas ka odluci da zajedno započnemo novo poglavlje života.
       </p>
       <p className='text-beige-6 text-xl  leading-5 px-5 mb-5'>
-        Rado putujemo, idemo na utakmice, provodimo duge dane na Chiemseeu,
-        družimo se, igramo Remija. Haris pronalazi radost u igricama, Amra u
-        knjigama i druženju – i baš u toj različitosti nalazimo savršenu
-        ravnotežu.
+        Volimo putovati i zajedno stvarati uspomene, pratiti Željine utakmice i
+        provoditi bezbrižne, duge dane na obali Chiemseea. Uživamo u druženjima
+        i tihim večerima uz Remi. Haris pronalazi radost u svijetu igrica, Amra
+        u knjigama i toplim razgovorima – a upravo u tim našim različitostima
+        pronašli smo savršenu ravnotežu i sklad.
       </p>
       <p className='text-beige-6 text-xl leading-5 px-5 mb-10'>
         Sada smo na korak do cilja, hvala Vam što ćete biti dio našeg vjenčanja
