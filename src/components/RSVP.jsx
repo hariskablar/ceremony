@@ -102,6 +102,7 @@ const RSVP = () => {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
+          className='fixed inset-0'
         >
           <LogoAnimation
             canFinish={canFinishLoader}

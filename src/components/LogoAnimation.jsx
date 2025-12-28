@@ -43,7 +43,7 @@ const LogoAnimation = ({ canFinish, onComplete }) => {
   });
   return (
     <div
-      className={`h-svh w-screen z-10000 items-center justify-center flex bg-white fixed`}
+      className={`h-svh w-screen z-10000 items-center justify-center flex bg-white`}
     >
       <svg
         version='1.2'
