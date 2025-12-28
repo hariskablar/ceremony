@@ -74,7 +74,7 @@ function App() {
             </div>
             <div className='w-full mt-10 mb-5'>
               <p className='text-center text-4xl text-beige-7 caligraphy'>
-                Trenuci do našeg dana
+                Do našeg vjenčanja je preostalo
               </p>
             </div>
             <div>
