@@ -30,7 +30,7 @@ function App() {
             key='logo'
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1 }}
           >
             <LogoAnimation
               canFinish={canFinishLoader}
@@ -45,7 +45,7 @@ function App() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
-            className='relative inset-0 bg-beige-1 z-50 pointer-events-none'
+            className='relative inset-0 bg-white z-50 pointer-events-none'
           >
             <div className='h-svh w-screen overflow-hidden relative'>
               <img src='/bg2.png' className='object-cover h-full ' />
