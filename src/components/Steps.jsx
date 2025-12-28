@@ -8,7 +8,7 @@ const stepData = [
   },
   {
     title: 'Ceremonija ljubavi',
-    time: '18:00',
+    time: '17:15',
     image: './marriage-gold.webp',
   },
   {
@@ -18,7 +18,7 @@ const stepData = [
   },
   {
     title: 'Slatki početak\nzajedničkog života',
-    time: '20:00',
+    time: '20:30',
     image: './cake-gold.webp',
   },
 ];
