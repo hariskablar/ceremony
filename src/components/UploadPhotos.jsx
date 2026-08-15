@@ -344,7 +344,7 @@ export default function UploadPhotos() {
           transition={{ duration: 1 }}
           className='relative inset-0'
         >
-          <div className='bg-beige-1 h-screen flex flex-col p-5'>
+          <div className='bg-beige-1 h-dvh flex flex-col p-5'>
             <div className='min-h-[32vh]'>
               <h1 className='text-3xl caligraphy text-center leading-6'>
                 Uhvatite trenutak <br></br>podijelite uspomenu
@@ -388,7 +388,7 @@ export default function UploadPhotos() {
                 <div className='mt-1'>
                   <div className='mt-1 h-3 w-full overflow-hidden rounded-lg border border-beige-6 bg-transparent'>
                     <div
-                      className='h-full bg-green-500 transition-[width] duration-300 ease-out'
+                      className='h-full bg-green-500/50 transition-[width] duration-300 ease-out'
                       style={{ width: `${totalProgress}%` }}
                     ></div>
                   </div>
@@ -453,7 +453,7 @@ export default function UploadPhotos() {
                       uploading ||
                       items.every((item) => item.status === 'success')
                     }
-                    className='text-beige-7 flex mx-auto border border-beige-6 px-10 py-1 rounded-md text-2xl'
+                    className='text-beige-7 flex mx-auto border border-beige-6 px-10 py-1 rounded-md text-xl'
                   >
                     {uploading ? 'Šaljem...' : `Pošalji fotografije`}
                   </button>
