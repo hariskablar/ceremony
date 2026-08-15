@@ -5,6 +5,7 @@ import App from './App.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NotFound from './components/NotFound.jsx';
 import RSVP from './components/RSVP.jsx';
+import UploadPhotos from './components/UploadPhotos.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -12,8 +13,9 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='/invitation' element={<RSVP />} />
+        <Route path='/slike' element={<UploadPhotos />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
-  </StrictMode>
+  </StrictMode>,
 );

@@ -19,7 +19,21 @@
   --color-beige-6: #988776;
   --color-beige-7: #4d3f35;
   --color-beige-8: #2f2a26;
+
+  --animate-fade-in-up: fade-in-up 0.3s ease forwards;
 }
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body,
 html {
   overflow-x: hidden;

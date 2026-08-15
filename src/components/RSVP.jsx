@@ -42,8 +42,6 @@ const RSVP = () => {
       .then((data) => {
         setFamily(data.family);
         setGuests(data.guests);
-        // console.log(data.family);
-        // console.log(data.guests);
 
         const initialSelected = {};
         (data.guests || []).forEach((g) => {
@@ -83,15 +81,15 @@ const RSVP = () => {
     family?.welcome === 'f'
       ? 'otvorila'
       : family?.welcome === 'm'
-      ? 'otvorio'
-      : 'otvorili';
+        ? 'otvorio'
+        : 'otvorili';
 
   const welcome =
     family?.welcome === 'f'
       ? 'Dobrodošla'
       : family?.welcome === 'm'
-      ? 'Dobrodošao'
-      : 'Dobrodošli';
+        ? 'Dobrodošao'
+        : 'Dobrodošli';
 
   const canFinishLoader = isReady && dataReady;
   return (
