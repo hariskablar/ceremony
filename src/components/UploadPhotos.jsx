@@ -344,7 +344,7 @@ export default function UploadPhotos() {
           transition={{ duration: 1 }}
           className='relative inset-0'
         >
-          <div className='bg-beige-1 h-dvh flex flex-col p-5'>
+          <div className='bg-beige-1 min-h-dvh flex flex-col p-5'>
             <div className='min-h-[32vh]'>
               <h1 className='text-3xl caligraphy text-center leading-6'>
                 Uhvatite trenutak <br></br>podijelite uspomenu

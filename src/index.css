@@ -37,6 +37,8 @@
 body,
 html {
   overflow-x: hidden;
+  background: var(--bg-beige-1);
+  min-height: 100%;
 }
 
 .caligraphy {
