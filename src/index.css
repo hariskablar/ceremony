@@ -35,9 +35,10 @@
 }
 
 body,
-html {
+html,
+#root {
   overflow-x: hidden;
-  background: var(--bg-beige-1);
+  background-color: var(--bg-beige-1);
   min-height: 100%;
 }
 
